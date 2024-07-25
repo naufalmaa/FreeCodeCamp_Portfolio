@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title">Wyv Survey Form</h1>
+            <p id="description">Thank you for filling this survey form!</p>
+        </header>
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input id="name" type="text" placeholder="Enter your Name" class="form-control" required />
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input id="email" type="email" placeholder="Enter your Email" class="form-control" required />
+            </div>
+            <div class="form-group">
+                <label id="number-label" for="number">Age</label>
+                <input id="number" type="number" placeholder="Enter your Age" class="form-control" min="17" max="35" />
+            </div>
+            <div class="form-group">
+                <label id="select-label" for="dropdown">Which option best describes your current role?</label>
+                <select name="select" id="dropdown" aria-placeholder="Select your Role." class="form-control">
+                    <option disabled selected value>Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="part-time-job">Part-Time Job</option>
+                    <option value="full-time-job">Full-Time Job</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label id="option-label" for="radio-container">How do you know about this product?</label>
+                <div id="radio-container">
+                    <input type="radio" id="value-campaign-1" name="campaign" value="Website" class="input-radio">
+                    <label for="value-campaign-1">Website</label>
+                    <input type="radio" id="value-campaign-2" name="campaign" value="Social Media" class="input-radio">
+                    <label for="value-campaign-2">Social Media</label>
+                    <input type="radio" id="value-campaign-3" name="campaign" value="Friends" class="input-radio">
+                    <label for="value-campaign-3">Friends</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label id="option-label-2" for="radio-container-2">What do you think about our product?</label>
+                <div id="radio-container-2">
+                    <input type="radio" id="value-1" name="review" value="Good" class="input-radio">
+                    <label for="value-1">I like this product!</label>
+                    <input type="radio" id="value-2" name="review" value="Neutral" class="input-radio">
+                    <label for="value-2">I think I don't have any comments about this.</label>
+                    <input type="radio" id="value-3" name="review" value="Bad" class="input-radio">
+                    <label for="value-3">I don't like this product at all.</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label id="checkbox-label" for="checkbox-container">What do you like about our product?</label>
+                <div id="checkbox-container">
+                    <input type="checkbox" id="value-product-1" name="like" value="Time" class="input-checkbox">
+                    <label for="value-product-1">It's delivery time. So fast!</label>
+                    <input type="checkbox" id="value-product-2" name="like" value="Money" class="input-checkbox">
+                    <label for="value-product-2">The cost is cheaper than i thought.</label>
+                    <input type="checkbox" id="value-product-3" name="like" value="Product" class="input-checkbox">
+                    <label for="value-product-3">I like this product values.</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="w3review">Can you give me some advice for future improvements?</label>
+                <textarea id="w3review" name="w3review" rows="4" cols="50" class="input-textarea"
+                    placeholder="Enter your comments about our product...">
+            </textarea>
+            </div>
+            <div class="form-group">
+
+                <button type="submit" id="submit" class="submit-button">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
